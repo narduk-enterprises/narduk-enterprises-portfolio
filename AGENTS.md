@@ -1,5 +1,17 @@
 # AGENTS.md — AI Agent Instructions
 
+> **🚨 CRITICAL: DO NOT PUSH TO `loganrenz/nuxt-v4-template` 🚨**
+>
+> This is a **read-only template repository**. Before writing ANY code, you MUST create your own repo:
+>
+> ```bash
+> gh repo create <project-name> --template loganrenz/nuxt-v4-template --private --clone
+> cd <project-name>
+> npm install
+> ```
+>
+> **Verify your remote** with `git remote -v` — it must NOT point to `loganrenz/nuxt-v4-template`.
+
 This is a **Nuxt 4 + Nuxt UI 4** template deployed to **Cloudflare Workers** with **D1 SQLite** (Drizzle ORM).
 
 ## Project Structure

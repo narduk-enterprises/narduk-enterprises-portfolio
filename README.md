@@ -44,19 +44,44 @@ This template strictly follows **Cloudflare Workers** compatibility standards:
 
 ---
 
+## ⚠️ IMPORTANT: This is a Template Repository
+
+> **DO NOT push changes back to `loganrenz/nuxt-v4-template`.** This repository is a read-only template. Always create your own copy first using one of the methods below.
+
+---
+
 ## 💻 Quick Start
 
-### 1. Clone & Install
+### Option A: Use as GitHub Template (Recommended)
+
+Click the **"Use this template"** button on GitHub, or run:
 
 ```bash
-git clone <your-repo-url>
-cd nuxt-v4-template
+# Create a new PRIVATE repo from this template using GitHub CLI
+gh repo create my-new-project --template loganrenz/nuxt-v4-template --private --clone
+cd my-new-project
 npm install
 ```
 
-### 2. Local Development
+### Option B: Clone and Re-point to Your Own Repo
 
-Start the Nuxt 4 development server locally:
+```bash
+# 1. Clone the template
+git clone https://github.com/loganrenz/nuxt-v4-template.git my-new-project
+cd my-new-project
+
+# 2. Create your own private repo and set it as the new origin
+gh repo create my-new-project --private --source=. --remote=origin --push
+
+# 3. Install dependencies
+npm install
+```
+
+> **Never run `git push` while the origin still points to `loganrenz/nuxt-v4-template`.** Verify with `git remote -v` before pushing.
+
+### Local Development
+
+Start the Nuxt 4 development server:
 
 ```bash
 npm run dev
@@ -267,6 +292,24 @@ Global font stacks (Inter, Outfit) and Tailwind `@theme` utilities are controlle
 ## 🤖 AI Agent Instructions
 
 If you are an AI agent analyzing this repository, welcome! This template is designed to give you a pristine starting point for building edge-native web applications with **Nuxt 4** and **Nuxt UI 4**.
+
+> **🚨 CRITICAL: DO NOT PUSH TO THIS REPOSITORY 🚨**
+>
+> This is a **read-only template**. You **MUST** create your own repository before writing any code.
+>
+> ```bash
+> # Step 1: Create your own private repo from this template
+> gh repo create <project-name> --template loganrenz/nuxt-v4-template --private --clone
+> cd <project-name>
+> npm install
+>
+> # Step 2: Verify your remote does NOT point to the template
+> git remote -v
+> # ✅ Should show: origin  https://github.com/<your-user>/<project-name>.git
+> # ❌ Must NOT show: origin  https://github.com/loganrenz/nuxt-v4-template.git
+> ```
+>
+> If you see `loganrenz/nuxt-v4-template` as your origin, **STOP** and fix it before making any commits.
 
 ### How to Start a New Project from this Template:
 
