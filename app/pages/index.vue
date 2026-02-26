@@ -110,19 +110,9 @@ const projects = [
     tag: 'Media / Content'
   },
   {
-    name: 'Narduk AI',
-    description: 'Enterprise integration workspace for agentic AI architectures, MCP protocol binding, and custom LLM inference pipelines.',
-    url: 'https://narduk.ai',
-    icon: 'i-lucide-bot',
-    gradient: 'from-purple-400 to-fuchsia-500',
-    iconColor: 'text-purple-400',
-    badgeColor: 'primary',
-    tag: 'AI / Infra'
-  },
-  {
     name: 'Circuit Breaker Sales',
     description: 'Massive B2B search catalog migration converting an outdated WooCommerce monolith into a blazing fast SQLite-backed Nuxt 4 application.',
-    url: 'https://circuitbreakersales.com',
+    url: 'https://circuitbreaker.online',
     icon: 'i-lucide-battery-charging',
     gradient: 'from-yellow-400 to-amber-500',
     iconColor: 'text-yellow-400',
@@ -130,13 +120,23 @@ const projects = [
     tag: 'E-commerce'
   },
   {
-    name: 'Live Music Tonight',
-    description: 'Automated scraping engine and event aggregator showcasing live music venues around Austin, Texas. Synchronizes with D1 daily.',
-    url: 'https://events.austin-texas.net',
-    icon: 'i-lucide-music',
-    gradient: 'from-rose-400 to-pink-500',
-    iconColor: 'text-rose-400',
+    name: 'Papa Everett\'s Pizza',
+    description: 'A modern, high-performance web experience for ordering pizza. Built on the Nuxt 4 template with Edge-side rendering.',
+    url: 'https://papaeverettspizza.com',
+    icon: 'i-lucide-pizza',
+    gradient: 'from-red-400 to-rose-500',
+    iconColor: 'text-red-400',
     badgeColor: 'error',
+    tag: 'Food / E-commerce'
+  },
+  {
+    name: 'Austin-Texas.net',
+    description: 'Automated scraping engine and event aggregator showcasing live music venues around Austin, Texas. Synchronizes with D1 daily.',
+    url: 'https://austin-texas.net',
+    icon: 'i-lucide-music',
+    gradient: 'from-purple-400 to-fuchsia-500',
+    iconColor: 'text-purple-400',
+    badgeColor: 'primary',
     tag: 'Aggregator'
   }
 ]
