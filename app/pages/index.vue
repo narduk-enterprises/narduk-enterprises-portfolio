@@ -30,6 +30,56 @@ const projects = [
     tag: 'SaaS / Testing'
   },
   {
+    name: 'Nuxt 4 Edge Template',
+    description: 'A minimal, production-ready starter template designed for maximum performance on Cloudflare Workers and D1 SQLite.',
+    url: 'https://github.com/loganrenz/nuxt-v4-template',
+    icon: 'i-lucide-rocket',
+    gradient: 'from-emerald-400 to-cyan-500',
+    iconColor: 'text-emerald-400',
+    badgeColor: 'success',
+    tag: 'Framework / Edge'
+  },
+  {
+    name: 'Nuxt 4 Template Examples',
+    description: 'Full-featured reference implementations for the Nuxt 4 Edge Template, including Auth, Analytics, and Dashboard patterns.',
+    url: 'https://github.com/loganrenz/nuxt-v4-template-examples',
+    icon: 'i-lucide-library',
+    gradient: 'from-indigo-400 to-blue-500',
+    iconColor: 'text-indigo-400',
+    badgeColor: 'info',
+    tag: 'Examples / Boilerplate'
+  },
+  {
+    name: 'iMessage Dictionary',
+    description: 'A specialized dictionary for decoding iMessage slang and abbreviations. Built with Nuxt 4 and high-performance WASM processing.',
+    url: 'https://dict.nard.uk',
+    icon: 'i-lucide-book-open',
+    gradient: 'from-blue-400 to-indigo-500',
+    iconColor: 'text-blue-400',
+    badgeColor: 'info',
+    tag: 'Utility / WASM'
+  },
+  {
+    name: 'Neon Sewer Raid',
+    description: 'A fast-paced, neon-drenched roguelike survival game. High-octane action rendered entirely on the Edge with Nuxt 4.',
+    url: 'https://neon-sewer-raid.com',
+    icon: 'i-lucide-swords',
+    gradient: 'from-fuchsia-500 to-purple-600',
+    iconColor: 'text-fuchsia-400',
+    badgeColor: 'error',
+    tag: 'Game / Edge'
+  },
+  {
+    name: 'Clawdle',
+    description: 'Wordle, but with a Claw twist. Daily word puzzles featuring advanced state management and high-fidelity UI animations.',
+    url: 'https://clawdle.com',
+    icon: 'i-lucide-fingerprint',
+    gradient: 'from-orange-400 to-red-500',
+    iconColor: 'text-orange-400',
+    badgeColor: 'warning',
+    tag: 'Game / Social'
+  },
+  {
     name: 'Old Austin Grouch',
     description: 'Comedic Austin nostalgia satire blog. Features curated essays, generative hero imagery, and a highly optimized Edge SSR rendering pipeline.',
     url: 'https://grouch.austin-texas.net',
@@ -88,7 +138,19 @@ const projects = [
     iconColor: 'text-blue-400',
     badgeColor: 'primary',
     tag: 'Web Tool'
+  },
+  {
+    name: 'Portfolio',
+    description: 'The meta-shell for Narduk Enterprises projects. Features refined glassmorphism, dynamic gradients, and a highly optimized portfolio grid.',
+    url: 'https://portfolio.nard.uk',
+    icon: 'i-lucide-layout',
+    gradient: 'from-slate-400 to-gray-500',
+    iconColor: 'text-slate-400',
+    badgeColor: 'secondary',
+    tag: 'Meta / Showcase'
   }
+
+
 ]
 </script>
 
