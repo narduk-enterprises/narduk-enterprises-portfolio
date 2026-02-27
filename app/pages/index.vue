@@ -52,7 +52,7 @@ const projects = [
   {
     name: 'iMessage Dictionary',
     description: 'A specialized dictionary for decoding iMessage slang and abbreviations. Built with Nuxt 4 and high-performance WASM processing.',
-    url: 'https://dict.nard.uk',
+    url: 'https://dictionary.nard.uk',
     icon: 'i-lucide-book-open',
     gradient: 'from-blue-400 to-indigo-500',
     iconColor: 'text-blue-400',
