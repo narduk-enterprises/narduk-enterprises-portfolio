@@ -138,6 +138,26 @@ const projects = [
     iconColor: 'text-purple-400',
     badgeColor: 'primary',
     tag: 'Aggregator'
+  },
+  {
+    name: 'Nagolnagemluapleira',
+    description: 'An interactive, fully narrated planetary report exposing the dual realities of a retro-futuristic society. Complete Nuxt 4 migration.',
+    url: 'https://nagolnagemluapleira.narduk.workers.dev',
+    icon: 'i-lucide-planet',
+    gradient: 'from-orange-400 to-red-500',
+    iconColor: 'text-orange-400',
+    badgeColor: 'warning',
+    tag: 'Interactive / SPA'
+  },
+  {
+    name: 'OG Preview',
+    description: 'Free tool showing how links appear across social media platforms. Built with Nuxt 4, H3 and automated Open Graph tag validation.',
+    url: 'https://ogpreview.app',
+    icon: 'i-lucide-share-2',
+    gradient: 'from-blue-400 to-cyan-500',
+    iconColor: 'text-blue-400',
+    badgeColor: 'primary',
+    tag: 'Web Tool'
   }
 ]
 </script>
