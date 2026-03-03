@@ -14,7 +14,7 @@
   },
   "routes": [
     {
-      "pattern": "portfolio.nard.uk",
+      "pattern": "narduk-enterprises-portfolio.nard.uk",
       "custom_domain": true
     }
   ],
