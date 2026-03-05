@@ -3,10 +3,11 @@
  *
  * Loads the GA4 measurement script and tracks SPA page navigations.
  * Set GA_MEASUREMENT_ID in your .env to activate.
+ *
+ * CRITICAL: The gtag() function MUST use `dataLayer.push(arguments)`, NOT
+ * `dataLayer.push([...args])`. The gtag.js library only processes Arguments
+ * objects as command tuples — regular Arrays are silently ignored.
  */
-
-/** A single gtag() command: the command name followed by its arguments. */
-type GtagCommand = [string, ...unknown[]]
 
 export default defineNuxtPlugin(() => {
   const runtimeConfig = useRuntimeConfig()
@@ -14,7 +15,6 @@ export default defineNuxtPlugin(() => {
 
   if (!measurementId || import.meta.server) return
 
-  // Skip on localhost
   if (
     window.location.hostname === 'localhost' ||
     window.location.hostname === '127.0.0.1'
@@ -22,38 +22,26 @@ export default defineNuxtPlugin(() => {
     return
   }
 
-  // Initialize dataLayer
   window.dataLayer = window.dataLayer || []
-  function gtag(command: string, ...args: unknown[]) {
-    window.dataLayer.push([command, ...args])
-  }
-  gtag('js', new Date())
-  gtag('config', measurementId, {
-    send_page_view: false // We handle SPA navigations manually
-  })
 
-  // Load the gtag.js script
+  // Must use `arguments` — gtag.js silently drops Array-based pushes
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, prefer-rest-params
+  function gtag(..._args: any[]) { window.dataLayer.push(arguments as any) }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ;(window as any).gtag = gtag
+
+  gtag('js', new Date())
+  gtag('config', measurementId)
+
   const script = document.createElement('script')
   script.async = true
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`
   document.head.appendChild(script)
-
-  // Track page views on route changes
-  const router = useRouter()
-  router.afterEach((to) => {
-    nextTick(() => {
-      gtag('event', 'page_view', {
-        page_location: window.location.origin + to.fullPath,
-        page_path: to.fullPath,
-        page_title: document.title
-      })
-    })
-  })
 })
 
-// Extend window type for dataLayer
 declare global {
   interface Window {
-    dataLayer: GtagCommand[]
+    dataLayer: IArguments[]
   }
 }
