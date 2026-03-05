@@ -153,7 +153,7 @@ const projects = [
   {
     name: 'AI Media Gen',
     description: 'A powerful edge-optimized generation platform for automated media creation.',
-    url: 'https://aimediagen.nard.uk',
+    url: 'https://ai-media-gen.nard.uk',
     icon: 'i-lucide-image',
     gradient: 'from-pink-400 to-rose-500',
     iconColor: 'text-pink-400',
@@ -163,7 +163,7 @@ const projects = [
   {
     name: 'Drift Map',
     description: 'Visual map interface for exploring global conceptual drift models connected directly with D1 edge caching.',
-    url: 'https://driftmap.nard.uk',
+    url: 'https://drift-map.nard.uk',
     icon: 'i-lucide-map',
     gradient: 'from-emerald-400 to-green-500',
     iconColor: 'text-emerald-400',
@@ -173,7 +173,7 @@ const projects = [
   {
     name: 'Enigma Box',
     description: 'A mysterious cryptographic puzzle adventure built seamlessly over Cloudflare Workers.',
-    url: 'https://enigmabox.nard.uk',
+    url: 'https://enigma-box.nard.uk',
     icon: 'i-lucide-box',
     gradient: 'from-violet-400 to-fuchsia-500',
     iconColor: 'text-violet-400',
@@ -183,7 +183,7 @@ const projects = [
   {
     name: 'Flashcard Pro',
     description: 'An advanced spaced-repetition flashcard application tuned for rapid cognitive skill acquisition.',
-    url: 'https://flashcardpro.nard.uk',
+    url: 'https://flashcard-pro.nard.uk',
     icon: 'i-lucide-layers',
     gradient: 'from-cyan-400 to-blue-500',
     iconColor: 'text-cyan-400',
@@ -193,7 +193,7 @@ const projects = [
   {
     name: 'Sailing Passage Map',
     description: 'Highly detailed geographic tracking tool enabling maritime insights and historical passage reconstruction.',
-    url: 'https://sailingpassagemap.nard.uk',
+    url: 'https://passages.nard.uk',
     icon: 'i-lucide-anchor',
     gradient: 'from-sky-400 to-indigo-500',
     iconColor: 'text-sky-400',
@@ -203,7 +203,7 @@ const projects = [
   {
     name: 'Tiny Invoice',
     description: 'A hyper-minimalist invoicing platform focusing purely on speed, rendering reliability, and absolute simplicity.',
-    url: 'https://tinyinvoice.nard.uk',
+    url: 'https://tiny-invoice.nard.uk',
     icon: 'i-lucide-file-text',
     gradient: 'from-lime-400 to-emerald-500',
     iconColor: 'text-lime-400',
@@ -213,7 +213,7 @@ const projects = [
   {
     name: 'Video Grab',
     description: 'A streamlined edge utility for scraping, processing, and aggregating highly compressed video clips.',
-    url: 'https://videograb.nard.uk',
+    url: 'https://video-grab.nard.uk',
     icon: 'i-lucide-video',
     gradient: 'from-fuchsia-400 to-purple-500',
     iconColor: 'text-fuchsia-400',
