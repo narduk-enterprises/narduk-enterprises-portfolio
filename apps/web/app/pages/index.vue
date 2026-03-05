@@ -63,7 +63,7 @@ const projects = [
   {
     name: 'Neon Sewer Raid',
     description: 'A fast-paced, neon-drenched roguelike survival game. High-octane action rendered entirely on the Edge with Nuxt 4.',
-    url: 'https://neon-sewer-raid.narduk.workers.dev',
+    url: 'https://neon-sewer-raid.nard.uk',
     icon: 'i-lucide-swords',
     gradient: 'from-fuchsia-500 to-purple-600',
     iconColor: 'text-fuchsia-400',
@@ -73,7 +73,7 @@ const projects = [
   {
     name: 'Clawdle',
     description: 'Wordle, but with a Claw twist. Daily word puzzles featuring advanced state management and high-fidelity UI animations.',
-    url: 'https://clawdle.narduk.workers.dev',
+    url: 'https://clawdle.nard.uk',
     icon: 'i-lucide-fingerprint',
     gradient: 'from-orange-400 to-red-500',
     iconColor: 'text-orange-400',
@@ -123,8 +123,8 @@ const projects = [
   {
     name: 'Nagolnagemluapleira',
     description: 'An interactive, fully narrated planetary report exposing the dual realities of a retro-futuristic society. Complete Nuxt 4 migration.',
-    url: 'https://nagolnagemluapleira.narduk.workers.dev',
-    icon: 'i-lucide-planet',
+    url: 'https://nagolnagemluapleira.nard.uk',
+    icon: 'i-lucide-moon',
     gradient: 'from-orange-400 to-red-500',
     iconColor: 'text-orange-400',
     badgeColor: 'warning',
@@ -149,9 +149,77 @@ const projects = [
     iconColor: 'text-slate-400',
     badgeColor: 'secondary',
     tag: 'Meta / Showcase'
+  },
+  {
+    name: 'AI Media Gen',
+    description: 'A powerful edge-optimized generation platform for automated media creation.',
+    url: 'https://aimediagen.nard.uk',
+    icon: 'i-lucide-image',
+    gradient: 'from-pink-400 to-rose-500',
+    iconColor: 'text-pink-400',
+    badgeColor: 'primary',
+    tag: 'AI / Generation'
+  },
+  {
+    name: 'Drift Map',
+    description: 'Visual map interface for exploring global conceptual drift models connected directly with D1 edge caching.',
+    url: 'https://driftmap.nard.uk',
+    icon: 'i-lucide-map',
+    gradient: 'from-emerald-400 to-green-500',
+    iconColor: 'text-emerald-400',
+    badgeColor: 'success',
+    tag: 'Utility / Geo'
+  },
+  {
+    name: 'Enigma Box',
+    description: 'A mysterious cryptographic puzzle adventure built seamlessly over Cloudflare Workers.',
+    url: 'https://enigmabox.nard.uk',
+    icon: 'i-lucide-box',
+    gradient: 'from-violet-400 to-fuchsia-500',
+    iconColor: 'text-violet-400',
+    badgeColor: 'error',
+    tag: 'Game / Puzzle'
+  },
+  {
+    name: 'Flashcard Pro',
+    description: 'An advanced spaced-repetition flashcard application tuned for rapid cognitive skill acquisition.',
+    url: 'https://flashcardpro.nard.uk',
+    icon: 'i-lucide-layers',
+    gradient: 'from-cyan-400 to-blue-500',
+    iconColor: 'text-cyan-400',
+    badgeColor: 'info',
+    tag: 'Education / App'
+  },
+  {
+    name: 'Sailing Passage Map',
+    description: 'Highly detailed geographic tracking tool enabling maritime insights and historical passage reconstruction.',
+    url: 'https://sailingpassagemap.nard.uk',
+    icon: 'i-lucide-anchor',
+    gradient: 'from-sky-400 to-indigo-500',
+    iconColor: 'text-sky-400',
+    badgeColor: 'info',
+    tag: 'Maps / Geo'
+  },
+  {
+    name: 'Tiny Invoice',
+    description: 'A hyper-minimalist invoicing platform focusing purely on speed, rendering reliability, and absolute simplicity.',
+    url: 'https://tinyinvoice.nard.uk',
+    icon: 'i-lucide-file-text',
+    gradient: 'from-lime-400 to-emerald-500',
+    iconColor: 'text-lime-400',
+    badgeColor: 'success',
+    tag: 'Business / Utility'
+  },
+  {
+    name: 'Video Grab',
+    description: 'A streamlined edge utility for scraping, processing, and aggregating highly compressed video clips.',
+    url: 'https://videograb.nard.uk',
+    icon: 'i-lucide-video',
+    gradient: 'from-fuchsia-400 to-purple-500',
+    iconColor: 'text-fuchsia-400',
+    badgeColor: 'error',
+    tag: 'Media / Extraction'
   }
-
-
 ]
 </script>
 
@@ -159,7 +227,7 @@ const projects = [
   <div class="min-h-screen bg-default selection:bg-primary/30">
     <!-- Hero Section -->
     <div class="relative overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-24">
-      <div class="absolute inset-0 bg-[url('https://res.cloudinary.com/nuxt/image/upload/v1711964175/nuxt-ui/bg-hero.svg')] bg-cover bg-center opacity-30 mix-blend-color-dodge"></div>
+      <div class="absolute inset-0 z-[-1] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-background to-background"></div>
       
       <UContainer class="relative">
         <div class="text-center max-w-2xl mx-auto">

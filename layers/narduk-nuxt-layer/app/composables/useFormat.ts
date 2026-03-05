@@ -1,7 +1,9 @@
+/* eslint-disable vue-official/require-use-prefix-for-composables -- standalone formatX helpers are pure utilities, not composables */
 /**
  * Shared formatting utilities for displaying currency, dates, numbers, and percentages.
  * Exported as plain functions for tree-shaking, and aliased in `useFormat()` for composable usage.
  */
+
 
 const DEFAULT_LOCALE = 'en-US';
 

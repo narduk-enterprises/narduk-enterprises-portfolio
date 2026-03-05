@@ -5,7 +5,7 @@
   "assets": {
     "directory": ".output/public"
   },
-  "compatibility_date": "2026-03-03",
+  "compatibility_date": "2026-03-05",
   "compatibility_flags": [
     "nodejs_compat"
   ],
@@ -14,7 +14,7 @@
   },
   "routes": [
     {
-      "pattern": "narduk-enterprises-portfolio.nard.uk",
+      "pattern": "portfolio.nard.uk",
       "custom_domain": true
     }
   ],

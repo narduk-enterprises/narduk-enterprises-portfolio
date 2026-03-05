@@ -26,6 +26,18 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    appleTeamId: process.env.APPLE_TEAM_ID || '',
+    appleKeyId: process.env.APPLE_KEY_ID || '',
+    appleSecretKey: process.env.APPLE_SECRET_KEY || '',
+    mapkitServerApiKey: process.env.MAPKIT_SERVER_API_KEY || '',
+    public: {
+      mapkitToken: process.env.MAPKIT_TOKEN || '',
+      buildVersion: process.env.GITHUB_SHA || process.env.CF_PAGES_COMMIT_SHA || '',
+      buildTime: new Date().toISOString(),
+    },
+  },
+
   site: {
     url: process.env.SITE_URL || 'http://127.0.0.1:3000',
     name: process.env.APP_NAME || 'Nuxt 4 App',
@@ -59,20 +71,18 @@ export default defineNuxtConfig({
     colorMode: true
   },
 
-  colorMode: {
-    preference: 'system'
-  },
+  ...(import.meta.dev ? {
+    colorMode: {
+      preference: 'system'
+    }
+  } : {}),
 
   ogImage: {
-    defaults: {
-      component: 'OgImageDefaultTakumi',
-      cacheMaxAgeSeconds: 60 * 10,
-    },
     runtimeCacheStorage: {
       driver: 'memory',
     },
   },
-  
+
   image: {
     provider: 'cloudflare',
   },
@@ -96,6 +106,6 @@ export default defineNuxtConfig({
 
   // Expose the layer configurations and files to consumers
   components: [
-    { path: '~/components', pathPrefix: false }
+    { path: fileURLToPath(new URL('./app/components', import.meta.url)), pathPrefix: false }
   ]
 })
