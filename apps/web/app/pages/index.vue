@@ -227,7 +227,8 @@ const projects = [
   <div class="min-h-screen bg-default selection:bg-primary/30">
     <!-- Hero Section -->
     <div class="relative overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-24">
-      <div class="absolute inset-0 z-[-1] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-background to-background"></div>
+      <div class="absolute inset-0 z-[-1] bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat opacity-60 dark:opacity-40 pointer-events-none [mask-image:linear-gradient(to_bottom,black_20%,transparent_100%)] mix-blend-plus-lighter dark:mix-blend-color-dodge"></div>
+      <div class="absolute inset-0 z-[-2] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-900/20 via-background to-background"></div>
       
       <UContainer class="relative">
         <div class="text-center max-w-2xl mx-auto">
@@ -250,7 +251,7 @@ const projects = [
         <UCard
           v-for="project in projects"
           :key="project.name"
-          class="group relative flex flex-col transition-all duration-300 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1 bg-elevated border-default backdrop-blur-sm overflow-hidden"
+          class="group relative flex flex-col transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-1 glass-card overflow-hidden"
           :ui="{ body: 'p-0' }"
         >
           <!-- Gradient Hover Effect -->
@@ -266,7 +267,7 @@ const projects = [
               </UBadge>
             </div>
             
-            <h3 class="text-xl font-bold text-default mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-white group-hover:to-muted transition-all">
+            <h3 class="text-xl font-display font-bold text-default mb-2 group-hover:text-primary transition-colors">
               {{ project.name }}
             </h3>
             

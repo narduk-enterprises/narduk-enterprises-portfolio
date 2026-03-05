@@ -7,6 +7,10 @@
   /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Outfit', system-ui, sans-serif;
+
+  /* Premium Shape Language */
+  --radius-card: 1.25rem;
+  --radius-button: 9999px;
 }
 
 body {
